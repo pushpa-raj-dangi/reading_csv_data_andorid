@@ -11,15 +11,15 @@
         android:theme="@style/Theme.Reading_csv_file">
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".controller.LoginActivity"
             android:exported="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="false" />
 
         <activity
-            android:name=".SignupActivity"
+            android:name=".controller.SignupActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

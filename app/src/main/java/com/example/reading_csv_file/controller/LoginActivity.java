@@ -1,15 +1,16 @@
-package com.example.reading_csv_file;
+package com.example.reading_csv_file.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.reading_csv_file.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -44,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                     et.putBoolean("loginstate", true);
                     et.apply();
 
-                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
 
 
@@ -63,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(LoginActivity.this,SignupActivity.class);
+                Intent i = new Intent(LoginActivity.this, SignupActivity.class);
                 startActivity(i);
 
             }

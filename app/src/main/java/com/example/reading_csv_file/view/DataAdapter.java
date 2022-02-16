@@ -1,4 +1,4 @@
-package com.example.reading_csv_file;
+package com.example.reading_csv_file.view;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.reading_csv_file.R;
+import com.example.reading_csv_file.entity.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,10 +39,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.tv1.setText("Name : "+students.get(position).getFirstName());
+        holder.tv1.setText("First Name : "+students.get(position).getFirstName());
         holder.tv3.setText("Lastname : "+students.get(position).getLastName());
         holder.tv2.setText(" Gender : "+students.get(position).getGender());
-        holder.tv.setText("Semester: "+Integer.toString(students.get(position).getId()));
 
 
     }
@@ -57,7 +59,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MyViewHolder> 
             tv1 = convertView.findViewById(R.id.tv1);
             tv3 = convertView.findViewById(R.id.tv3);
             tv2 = convertView.findViewById(R.id.tv2);
-            tv = convertView.findViewById(R.id.tv);
 
 
 

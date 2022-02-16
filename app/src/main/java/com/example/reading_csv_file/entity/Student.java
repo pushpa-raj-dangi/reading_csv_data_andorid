@@ -1,4 +1,4 @@
-package com.example.reading_csv_file;
+package com.example.reading_csv_file.entity;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ public class Student {
     private String gender;
     private String status;
     private String ethnicity;
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
 
     private String firstName;
@@ -61,11 +61,11 @@ public class Student {
         this.ethnicity = ethnicity;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String  dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
