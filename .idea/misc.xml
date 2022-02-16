@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Android/reading_csv_file/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.145703125" />
         <entry key="..\:/Android/reading_csv_file/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Android/reading_csv_file/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/reading_csv_file/app/src/main/res/layout/activity_signup.xml" value="0.1" />
       </map>
     </option>
   </component>
